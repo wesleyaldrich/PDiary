@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap');
+
+html {
+    min-height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    background-color: rgb(48, 58, 57);
+}
+
+.diary {
+    box-sizing: border-box;
+}
+
+.diary-container-link,
+.create-container-link,
+.edit-container-link {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    width: auto;
+    height: auto;
+}
+
+.diary-content,
+.diary-inside {
+    background-color: rgb(173, 241, 255);
+}
+
+.diary-content {
+    box-shadow: 1px 2px 6px 1px rgb(0, 155, 202);
+}
+
+.diary-content:hover {
+    background-color: rgb(129, 234, 255);
+}
+
+.diary-content h5,
+.diary-content p {
+    font-family: "Inconsolata", monospace;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    line-height: normal;
+    margin: 0;
+}
+
+.diary-content h5 {
+    font-weight: 600;
+}
+
+.diary-content p {
+    line-height: 1.4rem;
+    text-align: justify;
+}
+
+.diary-content hr {
+    margin: 0.75rem 0;
+}
+
+.create-container {
+    position: fixed;
+    right: 5vw;
+    bottom: 6vh;
+    width: 6vw;
+    aspect-ratio: 1/1;
+    border: none;
+    border-radius: 50%;
+    background-color: rgb(118, 232, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    object-fit: contain;
+    opacity: 0.9;
+}
+
+.create-container:hover {
+    background-color: rgb(118, 182, 255);
+}
+
+.diary-inside {
+    max-width: 1000px;
+}
+
+.diary-title-inside,
+.diary-content-inside,
+.diary-conclusion-inside {
+    text-align: justify;
+    font-family: "Space Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.diary-title-inside {
+    font-weight: 500;
+}
+
+.diary-content-inside {
+    line-height: normal;
+    min-height: 30vh;
+}
+
+.diary-conclusion-inside {
+    font-style: italic;
+}
+
+#create-body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-container {
+    max-width: 900px;
+    height: 60vh;
+    width: 80vw;
+    border: 2px solid rgb(0, 195, 255);
+    background-color: rgb(173, 241, 255);
+    box-shadow: 0.5px 2px 6px 3px rgb(0, 155, 202);
+}
+
+#create-form {
+    height: 100%;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+    gap: 10%;
+    justify-content: space-between;
+    padding-bottom: 7vh;
+}
+
+#create-form .input {
+    background-color: transparent;
+    padding: 8px;
+    padding: 0 16px;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 8px;
+    box-shadow: 0.5px 1px 6px 1px rgba(0, 155, 202, 0.5);
+}
+
+#create-form .input,
+#input-submit {
+    font-family: "Space Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.input:focus {
+    border: none;
+    outline: none;
+}
+
+#input-title {
+    height: 5vh;
+}
+
+#input-content {
+    flex: 1;    
+}
+
+#create-form textarea {
+    text-align: justify;
+    resize: none;
+    min-height: 10vh;
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 155, 202);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: rgb(0, 94, 109);
+}
+
+::-webkit-scrollbar-track {
+    background-color: rgb(129, 234, 255);;
+}
+
+textarea::-webkit-scrollbar {
+    width: 8px;
+}
+
+textarea::-webkit-scrollbar-thumb,
+textarea::-webkit-scrollbar-track {
+    border-radius: 4px;
+}
+
+#input-submit {
+    position: absolute;
+    bottom: 0;
+    width: 40vw;
+    height: 32px;
+    max-width: 160px;
+    background-color: rgb(0, 204, 255);
+    border: none;
+    outline: none;
+    color: rgb(244, 255, 88);
+    font-weight: 600;
+}
+
+.edit-container {
+    position: fixed;
+    right: 5vw;
+    bottom: 20vh;
+    width: 6vw;
+    aspect-ratio: 1/1;
+    border: none;
+    border-radius: 50%;
+    background-color: rgb(118, 232, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    object-fit: contain;
+    opacity: 0.9;
+}
+
+.edit-container:hover,
+.delete-container:hover {
+    background-color: rgb(118, 182, 255);
+}
+
+.delete-container {
+    position: fixed;
+    right: 5vw;
+    bottom: 7vh;
+    width: 6vw;
+    aspect-ratio: 1/1;
+    border: none;
+    border-radius: 50%;
+    background-color: rgb(118, 232, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    object-fit: contain;
+    opacity: 0.9;
+}

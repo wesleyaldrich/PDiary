@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>PDiary | Edit Diary</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="{{ asset('storage/assets/style.css') }}">
-    <link rel="icon" href="{{ asset('storage/assets/favicon.ico') }}" type="image/x-icon">
+    <link rel="stylesheet" href="{{ asset('assets/style.css') }}">
+    <link rel="icon" href="{{ asset('assets/favicon.ico') }}" type="image/x-icon">
 </head>
 <body id="create-body">
     <div class="form-container rounded-4 py-4 px-5 m-5 container-fluid">

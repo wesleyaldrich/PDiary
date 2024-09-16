@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>PDiary</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="{{ asset('storage/assets/style.css') }}">
-    <link rel="icon" href="{{ asset('storage/assets/favicon.ico') }}" type="image/x-icon">
+    <link rel="stylesheet" href="{{ asset('assets/style.css') }}">
+    <link rel="icon" href="{{ asset('assets/favicon.ico') }}" type="image/x-icon">
 </head>
 <body>
     <div class="container mt-5">
@@ -26,7 +26,7 @@
         </div>
     </div>
     <a class="create-container-link" href="{{ route('create') }}">
-        <img src="{{ asset('storage/assets/add.png') }}" class="create-container p-4">
+        <img src="{{ asset('assets/add.png') }}" class="create-container p-4">
     </a>
 </body>
 </html>
