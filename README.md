@@ -1,6 +1,8 @@
 # PDiary Web Application
 
-This is a Laravel web application to learn basic CRUD (Create, Read, Update, Delete) with Laravel. By preference, I use **diaries** for the **CRUD objects** for no particular reason.
+PDiary is a Laravel web application to learn basic CRUD (Create, Read, Update, Delete) with Laravel.
+Alongside Blade, Bootstrap 5.3 is also used for front-end side for the sake of practice.
+By preference, I use diaries for the CRUD objects for no particular reason.
 
 ## Prerequisites
 
