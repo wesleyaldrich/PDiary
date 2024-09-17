@@ -46,42 +46,40 @@ php artisan key:generate
 ```
 
 ### 5. Set up the database
-Start **XAMPP** and enable **MySQL**. Create a new database for your project in **phpMyAdmin**.
-If **phpMyAdmin** refuses to run (since **Apache** won't start), you may have to disable Nginx temporarily in Herd.
+Start **XAMPP** and enable **MySQL**. Create a new database for your project in **phpMyAdmin**. For this case, you may want to name it **"pdiary"**.
+If **phpMyAdmin** refuses to run (since **Apache** won't start), you may have to disable **Nginx** temporarily in **Herd** by doing:
+```bash
+herd stop
+```
 
 Then, run the database migrations:
 ```bash
 php artisan migrate
 ```
 
-### 6. Run the Laravel application using Herd
-Make sure you have [Herd](https://herd.dev/) installed, and then use it to run your Laravel application:
+### 6. Start Nginx and PHP with Herd
+Make sure you have [Herd](https://herd.dev/) installed, start the default **Herd** services:
 ```bash
 herd start
 ```
 
-This will start Nginx and PHP services. By default, the app will be available at `http://localhost`.
+This will start **Nginx** and **PHP** services.
+Once you have **Herd** installed, it is recommended to put the _"pdiary"_ folder inside _"Herd"_ directory
+(in my case: "C:\Users\Wesley\Herd\pdiary").
 
-### 7. Start MySQL with XAMPP
-Start XAMPP and ensure MySQL is running. You can access the MySQL database from phpMyAdmin at `http://localhost/phpmyadmin`.
+### 7. Manage the PDiary database with Herd
+Open the **Herd desktop application** and go to **"Open Sites"**, you will see the information about your web app if it's inside the **Herd** directory.
+Click "Open" in the "Database".
 
 ## Access the Application
 
-Once you've followed the setup steps, open your browser and navigate to:
+Once you've followed the setup steps, the local web app is accessible by visiting the URL: 
 
 ```
-http://localhost
+http://pdiary.test
 ```
 
-You should see your Laravel web application running locally.
+You should see the **PDiary** web application running locally.
 
-## Troubleshooting
-
-- If you encounter permission issues, try running the following command:
-  ```bash
-  sudo chmod -R 775 storage
-  sudo chmod -R 775 bootstrap/cache
-  ```
-
-- Make sure Herd and XAMPP are both running.
-
+- Note: Your web app URL could be different, double check by opening your **Herd desktop application** and go to **"Open Sites"**
+to see the information about your web app if it's inside the **Herd** directory.
