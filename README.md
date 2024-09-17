@@ -15,8 +15,8 @@ To run this project locally, for me, I'm using **Herd** for **Nginx** and **PHP-
 
 ### 1. Clone the repository
 ```bash
-git clone https://github.com/yourusername/your-laravel-project.git
-cd your-laravel-project
+git clone https://github.com/wesleyaldrich/PDiary.git
+cd PDiary
 ```
 
 ### 2. Install Laravel dependencies
