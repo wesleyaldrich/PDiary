@@ -1,6 +1,6 @@
-# Laravel Web Application
+# PDiary Web Application
 
-This is a Laravel web application.
+This is a Laravel web application to learn basic CRUD (Create, Read, Update, Delete) with Laravel. By preference, I use **diaries** for the **CRUD objects** for no particular reason.
 
 ## Prerequisites
 
@@ -69,7 +69,15 @@ Once you have **Herd** installed, it is recommended to put the _"pdiary"_ folder
 
 ### 7. Manage the PDiary database with Herd
 Open the **Herd desktop application** and go to **"Open Sites"**, you will see the information about your web app if it's inside the **Herd** directory.
-Click "Open" in the "Database".
+Click "Open" in the "Database" row to open **AdminerEvo**. Or you can simplify this whole process by visiting the URL:
+```
+http://database.herd.test
+```
+
+Or you can also do this instead if you have the same local MySQL credentials as me to simplify even more.
+```
+http://database.herd.test/?mysql&server=127.0.0.1:3306&username=root&password=&db=pdiary
+```
 
 ## Access the Application
 
