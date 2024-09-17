@@ -97,7 +97,6 @@ to see the information about your web app if it's inside the **Herd** directory.
 ## Image Previews
 
 ![image](https://github.com/user-attachments/assets/d8a021be-9757-4e6f-b821-5922748e2c15)
-
 ![image](https://github.com/user-attachments/assets/ed046095-00bc-40db-9bd9-d3138eff35f0)
-
 ![image](https://github.com/user-attachments/assets/35ae6c2c-172b-4623-9006-68e51c369162)
+![image](https://github.com/user-attachments/assets/b965ce9c-b28f-41d1-a92d-5410e64c6f54)
