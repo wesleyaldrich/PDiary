@@ -93,3 +93,6 @@ You should see the **PDiary** web application running locally.
 
 - Note: Your web app URL could be different, double check by opening your **Herd desktop application** and go to **"Open Sites"**
 to see the information about your web app if it's inside the **Herd** directory.
+
+![image](https://github.com/user-attachments/assets/d8a021be-9757-4e6f-b821-5922748e2c15)
+
